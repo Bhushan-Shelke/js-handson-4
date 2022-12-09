@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <pre>
+        1)Write a program that takes an array as input from the user and find out the product of the elements.
+        Ans-const Find_Prod = (array, N) => {
+            product=1;
+            for (i=0; i< N;i++){ 
+            product= product * array[i];}
+            return (product);};
+        2)Write a program which takes an array as input from the user and find out the sum of the array elements.
+        Ans-const Find_Sum = (array, N) => {
+            sum=0;
+            i=0;
+            while (i< N){
+            sum+=array[i];
+            i++;
+            }
+              return sum;
+            };
+        3)You are given an array A containing Ninteger elements and an integer K, and your task is to return the count of occurrences of Kin array A.
+        Ans- const findCount = (N, K, Arr) => {
+            count=0;
+            for (i=0; i< N; i++){
+           if (K==Arr[i]){count++;}}
+           return count;
+           };
+        4) Even odd
+        Ans- const findEvenOdd = (N, Arr) => {
+            let even = 0;
+            let odd = 0;
+            for (let i = 0; i < N; i++) {
+            if (Arr[i] % 2 === 0) {
+            even = even + Arr[i];
+            } else {
+            odd = odd + Arr[i];
+            }
+            }
+            return [even, odd];
+            };
+        5)Check whether the number is present or not.
+        Ans-const Find_Num = (array,N,M) => {
+            count = 0;
+            for (i = 0; i < array.length; i++) {
+            if (array[i] == M) {
+            count++;
+              }
+            }
+            if (count >= 1) {
+            return "YES";}
+            else return "NO";
+            };
+        6)Higher Age
+        Ans-const highAge = (N, Arr) => {
+            let a = [];
+           for (i=0; i< N; i++){
+           if (Arr[i] >= 18){
+           a.push(Arr[i]);
+             }
+           }
+           return (a);
+           };
+        7)Increment the Array Elements
+        Ans-const Inc_Arr = (array, N) => {
+            let a = [];
+            
+            for (i = 0; i < N; i++) {
+              
+            a.push((array[i] += 1));}
+        
+            console.log(a.join(" "));
+            };
+        8)Pass or Fail
+        Ans-  const isAllPass = (N, Arr) => {
+            Arr.sort();
+            for (i=0; i < N; i++){
+            if (Arr[i]>=32){
+            return "YES";}
+            else
+            return "NO";
+            } 
+            };    
+            
+    </pre>
+</body>
+</html>
